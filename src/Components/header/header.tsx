@@ -43,7 +43,7 @@ export const Header = () => {
                 </div>
                 <div className={css.Exit}>
                     <a href='exit' className={css.menu_exit}>Выход</a>
-                    <IconExit/>
+                    <a href='exit'><IconExit/></a>
                 </div>
             </div>
             }
