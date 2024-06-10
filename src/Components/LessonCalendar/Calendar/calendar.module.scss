@@ -1,0 +1,116 @@
+.container {
+    height: 640px;
+    .Calendar_header {
+        margin-top: 22px;
+        margin-left: 32px;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+    }
+    .header_input {
+        width: 253px;
+        height: 36px;
+        border: 2px solid #ECECEC;
+        border-radius: 8px;
+        &::placeholder {
+            text-align: left;
+            padding-left: 12px;
+            padding-bottom: 10px;
+        }
+    }
+    .header_btn {
+        background-color: #DECFFF;
+        width: 344px;
+        height: 40px;
+        border-radius: 30px;
+        border: none;
+        font-size: 16px;
+        cursor: pointer;
+        &:hover {
+            background-color: #8D7FC7;
+        }
+    }
+    .Calendar_data {
+        margin: 0;
+        padding-top: 31px;
+        padding-left: 32px;
+        display: flex;
+        .Calendar_hero_data {
+            display: flex;
+            flex-direction: row;
+            gap: 16px;
+            h3 {
+                margin: 0;
+                font-weight: 600;
+            }
+        }
+        .Calendar_hero_data_btn {
+            padding-left: 16px;
+            .Calendar_hero_data_btn_item {
+                border-radius: 15px;
+                border: 2px solid #8D7FC7;
+                text-align: center;
+                background-color: #fff;
+                width: 85px;
+                height: 32px;
+                cursor: pointer;
+                &:hover {
+                    background-color: #8D7FC7;
+                    color: #fff;
+                }
+            }
+        }
+    }
+    .Calendar_days {
+        display: flex;
+        flex-direction: row;
+        text-align: end;
+        margin-left: 32px;
+        display: grid;
+        grid-template-columns: repeat(7, 14.285%);
+        li {
+            list-style-type: none;
+            font-size: 15px;
+            color: #79747F;
+            line-height: 135%;
+            padding-right: 6px;
+        }
+    }
+    .Calendar_hero {
+        max-width: 100%;
+        margin-left: 32px;
+        display: grid;
+        grid-template-columns: repeat(7, 14.285%);
+        grid-template-rows: repeat(5, 105px);
+        border: 1px solid #ECECEC;
+        
+        .Calendar_hero_date {
+            border: 1px solid #ECECEC;
+            text-align: right;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            gap: 2px;
+            .data_gray {
+                color: #C8C5CD;
+                margin: 0;
+                padding-top: 4px;
+                padding-right: 2px;
+                padding-bottom: auto;
+                font-size: 1.5vh;
+            }
+            .data_black {
+                margin: 0;
+                padding-top: 4px;
+                padding-right: 2px;
+                padding-bottom: auto;
+                color: #323854;
+                font-size: 1.5vh;
+            }
+            .data_red {
+                color: #E12828;
+            }
+        }
+        
+    }
+}
