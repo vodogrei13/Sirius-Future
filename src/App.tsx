@@ -9,6 +9,10 @@ import {
 
 const router = createBrowserRouter([
   {
+    path: "/",
+    element: <ProfilePage/>
+},
+  {
       path: "Home",
       element: <ProfilePage/>
   },
