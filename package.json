@@ -1,7 +1,6 @@
 {
   "name": "siriusfuture",
   "version": "0.1.0",
-  "homepage": "https://vodogrei13.github.io/Sirius-Future",
   "private": true,
   "dependencies": {
     "@reduxjs/toolkit": "^2.2.5",
